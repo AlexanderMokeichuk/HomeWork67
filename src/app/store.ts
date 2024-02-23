@@ -1,5 +1,5 @@
 import {configureStore} from "@reduxjs/toolkit";
-import {eventPassword} from "../Intercom";
+import {eventPassword} from "../container/Intercom/IntercomState";
 
 export const store = configureStore({
   reducer: {

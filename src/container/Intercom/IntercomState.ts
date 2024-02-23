@@ -1,8 +1,8 @@
 import {createSlice, PayloadAction} from "@reduxjs/toolkit";
-import {IntercomState} from "./type";
-import {RIGHT_PASSWORD} from "./constants";
+import {IntercomState} from "../../type";
+import {RIGHT_PASSWORD} from "../../constants";
 
-const Intercom: IntercomState = {
+const IntercomState: IntercomState = {
   password: "",
   isActivePassword: false,
 };
@@ -10,7 +10,7 @@ const Intercom: IntercomState = {
 
 export const passwordSlice = createSlice({
   name: "intercom",
-  initialState: Intercom,
+  initialState: IntercomState,
   reducers: {
     enterNumber: (state, action: PayloadAction<string>) => {
       state.password += action.payload;

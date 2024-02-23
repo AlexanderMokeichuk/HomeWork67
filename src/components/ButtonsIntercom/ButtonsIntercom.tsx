@@ -1,6 +1,6 @@
 import React from "react";
 import {NUMBERS} from "../../constants";
-import {enterNumber} from "../../Intercom";
+import {enterNumber} from "../../container/Intercom/IntercomState";
 import {useDispatch} from "react-redux";
 
 interface Props {
