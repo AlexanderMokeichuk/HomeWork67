@@ -5,3 +5,5 @@ export const NUMBERS: Num[] = [
   {value: "6"}, {value: "5"}, {value: "4"},
   {value: "3"}, {value: "2"}, {value: "1"},
 ];
+
+export  const RIGHT_PASSWORD = "1337";

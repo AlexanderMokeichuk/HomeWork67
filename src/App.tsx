@@ -2,6 +2,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {RootState} from "./app/store";
 import ButtonsIntercom from "./components/ButtonsIntercom/ButtonsIntercom";
 import {checkPassword, deleteNumber, enterNumber} from "./Intercom";
+import {RIGHT_PASSWORD} from "./constants";
 
 
 function App() {
@@ -29,6 +30,12 @@ function App() {
 
   return (
     <div className={"min-vh-100 bg-black d-flex flex-column justify-content-center align-items-center"}>
+     <div
+       className={"bg-white p-2 rounded position-fixed"}
+       style={{top: "10%", left: "30%"}}
+     >
+       Password: {RIGHT_PASSWORD}
+     </div>
       <div>
         <div className={"bg-dark d-flex flex-column align-items-center p-2"}>
           <div className={"text-white"}><p>Intercom</p></div>

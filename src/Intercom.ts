@@ -1,12 +1,12 @@
 import {createSlice, PayloadAction} from "@reduxjs/toolkit";
 import {IntercomState} from "./type";
+import {RIGHT_PASSWORD} from "./constants";
 
 const Intercom: IntercomState = {
   password: "",
   isActivePassword: false,
 };
 
-const rightPassword = "1337";
 
 export const passwordSlice = createSlice({
   name: "intercom",
@@ -31,7 +31,7 @@ export const passwordSlice = createSlice({
         return;
       }
 
-      if (state.password === rightPassword) {
+      if (state.password === RIGHT_PASSWORD) {
         state.password = "Access Granted";
         state.isActivePassword = true;
         return;
